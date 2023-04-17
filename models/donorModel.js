@@ -1,9 +1,9 @@
 const mongoose = require("mongoose"); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var donerSchema = new mongoose.Schema(
+var donorSchema = new mongoose.Schema(
   {
-    donerName: {
+    donorName: {
       type: String,
       required: true,
     },
@@ -26,4 +26,4 @@ var donerSchema = new mongoose.Schema(
 );
 
 //Export the model
-module.exports = mongoose.model("Doner", donerSchema);
+module.exports = mongoose.model("Donor", donorSchema);
